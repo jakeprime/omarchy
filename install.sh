@@ -98,5 +98,6 @@ source $OMARCHY_INSTALL/customization/zsh.sh
 # Reboot
 show_logo laseretch 920
 show_subtext "You're done! So we'll be rebooting now..."
+sudo rm -f /etc/sudoers.d/99-omarchy-installer &>/dev/null
 sleep 2
 reboot

@@ -89,7 +89,13 @@ source $OMARCHY_INSTALL/customization/zsh.sh
 
 # Reboot
 show_logo laseretch 920
-show_subtext "You're done! So we'll be rebooting now..."
-sudo rm -f /etc/sudoers.d/99-omarchy-installer &>/dev/null
+show_subtext "You're done! So we're ready to reboot now..."
+
+if sudo test -f /etc/sudoers.d/99-omarchy-installer; then
+  sudo rm -f /etc/sudoers.d/99-omarchy-installer &>/dev/null
+  echo
+  gum confirm "Have you unplugged the USB installer?"
+fi
+
 sleep 2
 reboot

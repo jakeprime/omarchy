@@ -17,6 +17,7 @@ catch_errors() {
     echo "You can retry by running: bash ~/.local/share/omarchy/install.sh"
   fi
 
+  echo "See your installation log in ~/.local/state/omarchy/installation.log"
   echo "Get help from the community: https://discord.gg/tXFUdasqhY"
 }
 
@@ -32,6 +33,9 @@ show_subtext() {
   echo "$1" | tte --frame-rate ${3:-640} ${2:-wipe}
   echo
 }
+
+# Start logging
+source $OMARCHY_INSTALL/log/before-install.sh
 
 # Install prerequisites
 source $OMARCHY_INSTALL/preflight/chroot.sh
@@ -79,6 +83,11 @@ source $OMARCHY_INSTALL/apps/webapps.sh
 source $OMARCHY_INSTALL/apps/xtras.sh
 source $OMARCHY_INSTALL/apps/mimetypes.sh
 
+# jakeprime customization
+source $OMARCHY_INSTALL/customization/packages.sh
+source $OMARCHY_INSTALL/customization/homesick.sh
+source $OMARCHY_INSTALL/customization/zsh.sh
+
 # Updates
 sudo updatedb
 
@@ -87,12 +96,8 @@ if ping -c5 omarchy.org &>/dev/null; then
   yay -Syu --noconfirm
 fi
 
-# Customize
-show_logo
-show_subtext "Customizing for jakeprime"
-source $OMARCHY_INSTALL/customization/packages.sh
-source $OMARCHY_INSTALL/customization/homesick.sh
-source $OMARCHY_INSTALL/customization/zsh.sh
+# Stop logging
+source $OMARCHY_INSTALL/log/after-install.sh
 
 # Reboot
 show_logo laseretch 920

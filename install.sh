@@ -70,10 +70,8 @@ source $OMARCHY_INSTALL/customization/zsh.sh
 # Updates
 sudo updatedb
 
-# Update system packages if we have a network connection
-if ping -c5 omarchy.org &>/dev/null; then
-  sudo pacman -Syu --noconfirm
-fi
+# Update system packages
+sudo pacman -Syu --noconfirm
 
 # Reboot
 omarchy-show-logo

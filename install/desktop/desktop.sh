@@ -1,6 +1,6 @@
 #!/bin/bash
 
-yay -S --noconfirm --needed \
+sudo pacman -S --noconfirm --needed \
   brightnessctl playerctl pamixer wiremix wireplumber \
   wl-clip-persist \
   nautilus sushi ffmpegthumbnailer gvfs-mtp \

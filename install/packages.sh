@@ -1,4 +1,6 @@
 sudo pacman -S --noconfirm --needed \
+  1password-beta \
+  1password-cli \
   alacritty \
   avahi \
   bash-completion \
@@ -24,6 +26,8 @@ sudo pacman -S --noconfirm --needed \
   fzf \
   gcc14 \
   github-cli \
+  gnome-calculator \
+  gnome-keyring \
   gnome-themes-extra \
   google-chrome \
   gum \
@@ -40,14 +44,17 @@ sudo pacman -S --noconfirm --needed \
   imv \
   inetutils \
   jq \
+  kdenlive \
   kvantum-qt5 \
   lazydocker \
   lazygit \
   less \
   libqalculate \
+  libreoffice \
   limine-mkinitcpio-hook \
   limine-snapper-sync \
   llvm \
+  localsend \
   luarocks \
   mako \
   man \
@@ -61,7 +68,10 @@ sudo pacman -S --noconfirm --needed \
   noto-fonts-extra \
   nss-mdns \
   nvim \
+  obs-studio \
+  obsidian \
   pamixer \
+  pinta \
   playerctl \
   plocate \
   plymouth \
@@ -73,7 +83,9 @@ sudo pacman -S --noconfirm --needed \
   python-terminaltexteffects \
   ripgrep \
   satty \
+  signal-desktop \
   slurp \
+  spotify \
   starship \
   sushi \
   swaybg \
@@ -85,6 +97,7 @@ sudo pacman -S --noconfirm --needed \
   ttf-font-awesome \
   ttf-ia-writer \
   ttf-jetbrains-mono \
+  typora \
   tzupdate \
   ufw \
   ufw-docker \
@@ -102,5 +115,6 @@ sudo pacman -S --noconfirm --needed \
   xdg-desktop-portal-gtk \
   xdg-desktop-portal-hyprland \
   xmlstarlet \
+  xournalpp \
   yaru-icon-theme \
   zoxide

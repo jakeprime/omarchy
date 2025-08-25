@@ -51,8 +51,6 @@ sudo pacman -S --noconfirm --needed \
   less \
   libqalculate \
   libreoffice \
-  limine-mkinitcpio-hook \
-  limine-snapper-sync \
   llvm \
   localsend \
   luarocks \

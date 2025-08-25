@@ -80,6 +80,12 @@ show_subtext "Updating system packages [5/5]"
 sudo updatedb
 yay -Syu --noconfirm --ignore uwsm
 
+# Customize
+show_logo
+show_subtext "Customizing for jakeprime"
+source $OMARCHY_INSTALL/customization/packages.sh
+source $OMARCHY_INSTALL/customization/ssh.sh
+
 # Reboot
 show_logo laseretch 920
 show_subtext "You're done! So we'll be rebooting now..."

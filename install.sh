@@ -83,6 +83,7 @@ yay -Syu --noconfirm --ignore uwsm
 # Customize
 source $OMARCHY_INSTALL/customization/packages.sh
 source $OMARCHY_INSTALL/customization/ssh.sh
+source $OMARCHY_INSTALL/customization/homesick.sh
 
 # Reboot
 show_logo laseretch 920

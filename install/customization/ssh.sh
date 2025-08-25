@@ -15,10 +15,9 @@ echo "Add this key to Github using wormhole"
 /usr/bin/wormhole send --hide-progress --no-qr ~/.ssh/$SSH_KEY.pub
 
 echo ""
-read -p "$(tput bold)Press enter when key has been added to Github...$(tput sgr0)
+read -p "Press enter when key has been added to Github...
 "
 
 # add fingerprint
 echo "github.com ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOMqqnkVzrm0SdG6UOoqKLsabgH5C9okWi0dh2l9GKJl
-" >> ~/.ssh/known_hosts
-
+" >>~/.ssh/known_hosts

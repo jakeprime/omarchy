@@ -84,7 +84,6 @@ yay -Syu --noconfirm --ignore uwsm
 show_logo
 show_subtext "Customizing for jakeprime"
 source $OMARCHY_INSTALL/customization/packages.sh
-source $OMARCHY_INSTALL/customization/ssh.sh
 source $OMARCHY_INSTALL/customization/homesick.sh
 
 # Reboot

@@ -7,11 +7,7 @@ $MISE_SHIMS/ruby -v 2>/dev/null || mise install ruby@latest && mise use -g ruby
 
 $MISE_SHIMS/gem install homesick
 
-
-eval "$(ssh-agent -s)"
-ssh-add ~/.ssh/$SSH_KEY
-
-$MISE_SHIMS/homesick clone git@github.com:jakeprime/dotfiles arch
+$MISE_SHIMS/homesick clone https://github.com/jakeprime/dotfiles arch
 pushd ~/.homesick/repos/arch && git checkout arch && popd
 
 $MISE_SHIMS/homesick link arch --force

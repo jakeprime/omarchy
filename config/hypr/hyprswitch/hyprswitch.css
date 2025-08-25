@@ -1,0 +1,29 @@
+.client-image {
+    margin: 2px;
+}
+
+.client {
+    margin: 5px;
+    border: 3px solid rgba(0, 0, 0, 0.2);
+}
+
+.client_active {
+    border: 3px solid rgba(153, 99, 255, 1.0);
+}
+
+.workspace {
+    border-radius: 15px;
+    border: 0 solid rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.workspaces {
+    border: 0 solid rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
+    margin: 10px;
+}
+
+window {
+    border: 0 solid rgba(0, 0, 0, 0);
+    background-color: rgba(20, 20, 20, 0.6);
+}

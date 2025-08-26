@@ -1,0 +1,17 @@
+#!/bin/bash
+
+sudo pacman -S --needed \
+  libgccjit libxpm tree-sitter
+
+FOLDER=/tmp/$(uuidgen)
+
+git clone -b feature/shadow https://github.com/ksqsf/emacsmoe $FOLDER
+pushd $FOLDER
+
+./autogen.sh
+./configure --with-native-compilation --with-pgtk --with-tree-sitter
+sudo make install -j $(nproc)
+
+popd
+
+git clone https://github.com/syl20bnr/spacemacs $HOME/.emacs.d

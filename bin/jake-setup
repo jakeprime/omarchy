@@ -1,0 +1,6 @@
+#!/bin/bash
+
+omarchy-fingerprint-setup
+jake-setup-ssh
+jake-setup-fonts
+jake-setup-emacs
